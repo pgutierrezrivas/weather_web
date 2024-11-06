@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter Tight", sans-serif;
+    color: #333;
+}
+
+body {
+    background-color: #fbd05d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+}
+
+h1 {
+    margin: -35px 0 30px 0;
+    font-weight: 500;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#city-input {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4776E2;
+    border: 1px solid #333;
+    border-radius: 25px;
+    margin-right: 12px;
+    width: 300px;
+    background-color: whitesmoke;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+}
+
+#city-input::placeholder {
+    color: #888;
+    font-weight: 600;
+    text-transform: none;
+}
+
+#get-weather {
+    padding: 8px 20px;
+    font-size: 15px;
+    outline: none;
+    margin: 0 4px;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#get-weather:hover {
+    transform: scale(1.1);
+}
+
+#weather-info {
+    display: none;
+    margin-top: 30px;
+}
+
+.weather-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+#error-message.hidden {
+    display: none;
+}
+
+#weather-icon img {
+    width: 110px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    padding: 3px;
+}
+
+#weather-girl { 
+    max-width: 430px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#temperature {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#description {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ion-icon {
+    margin-right: 5px;
+}
