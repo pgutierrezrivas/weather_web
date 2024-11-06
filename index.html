@@ -13,14 +13,15 @@
 </head>
 <body>
     <div class="container">
+        <!-- imagen designed by Freepik (www.freepik.com) -->
         <img id="weather-girl" src="./static/img/weather_girl.svg" alt="weather_girl" width="400px">
         <h1>Situación meteorológica actual en tu ciudad</h1>
         <!-- input para ingresar la ciudad -->
-        <div class="search-container">
-            <input type="text" id="city-input" placeholder="Ingresa una ciudad">
+        <div id="search-container">
+            <input type="text" id="city-input" class="data-input" placeholder="Ingresa una ciudad">
+            <input type="text" id="country-input" class="data-input" placeholder="Ingresa un pais">
             <button id="get-weather">Ver Clima</button>
         </div>
-
         <!-- area para mostrar informacion del clima -->
         <div id="weather-info" class="weather-info">
             <div id="weather-icon"></div>
@@ -30,7 +31,6 @@
             <p><ion-icon name="umbrella-outline"></ion-icon> <span id="precipitation"></span></p>
             <p><ion-icon name="leaf-outline"></ion-icon> <span id="wind-speed"></span></p>
         </div>
-
         <!-- mensaje de error si la ciudad no existe -->
         <div id="error-message" class="error-message"></div>
     </div>
